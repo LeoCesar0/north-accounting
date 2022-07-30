@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  @apply text-primary-text;
+  @apply bg-background-color;
+
+  @apply text-sm sm:text-sm md:text-sm lg:text-base xl:text-lg;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  @apply text-5xl text-center md:text-left
+}
+
+h2 {
+  @apply text-4xl text-center md:text-left
+}
+
+h3 {
+  @apply text-3xl text-center md:text-left
+}
+
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.anim-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.anim-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.anim-delay-3 {
+  animation-delay: 0.5s;
+}
+
+.textFadeIn {
+  opacity: 0;
+  animation-name: textFadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
